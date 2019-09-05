@@ -164,7 +164,7 @@ public class PlayerMovement : MonoBehaviour
     //is on top of any GameObject.
     bool IsGrounded()
     {
-        return Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f);
+        return Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f, groundLayerMask);
     }
 
     #endregion

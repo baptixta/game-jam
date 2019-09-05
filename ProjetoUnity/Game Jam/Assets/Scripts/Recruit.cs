@@ -5,20 +5,27 @@ using UnityEngine;
 public class Recruit : MonoBehaviour
 {
     public Transform recruiter;
+    public Vector3 offset;
     public float speed;
     public float accelerationSpeed;
     public bool inArea;
     Rigidbody2D rb;
     float velocityToApply;
     public Collider2D triggerToDeactivateWhenRecruited;
+    Transform pointer;
 
     void Start ()
     {
         rb = GetComponent<Rigidbody2D>();
+        //Instantiating pointer
+        pointer = new GameObject ("Pointer").transform;
+        pointer.SetParent (transform);
+        pointer.localPosition = Vector3.zero;
     }
 
     void FixedUpdate()
     {
+
         //Sprite flip
         if (rb.velocity.x > 0)
         {
@@ -31,30 +38,27 @@ public class Recruit : MonoBehaviour
 
         if (recruiter == null) //Stay in place, no recruiter to follow
         {
+            //Calculate velocityToApply;
             velocityToApply = Mathf.Lerp (velocityToApply, 0.0f, accelerationSpeed * Time.deltaTime);
-            rb.velocity = new Vector2 (velocityToApply, rb.velocity.y);
+            //Apply velocity
+            rb.velocity = pointer.forward * velocityToApply;
             return;
         }
+
+        //Pointer
+        pointer.LookAt (recruiter.position + offset);
 
         //Needs to move towards recruiter
         if (!inArea)
         {
-            //Recruiter is on the right
-            if (transform.position.x < recruiter.position.x)
-            {
-                //Calculate velocityToApply
-                velocityToApply = Mathf.Lerp (velocityToApply, speed + Vector3.Distance (transform.position, recruiter.position), accelerationSpeed * Time.deltaTime);
-                //Move
-                rb.velocity = new Vector2 (velocityToApply, rb.velocity.y);
-            }
-            //Recruiter is on the left
-            if (transform.position.x > recruiter.position.x)
-            {
-                //Calculate velocityToApply
-                velocityToApply = Mathf.Lerp (velocityToApply, -speed - Vector3.Distance (transform.position, recruiter.position), accelerationSpeed * Time.deltaTime);
-                //Move
-                rb.velocity = new Vector2 (velocityToApply, rb.velocity.y);
-            }
+            //Calculate velocityToApply
+            velocityToApply = Mathf.Lerp (velocityToApply, speed + Vector3.Distance (transform.position, recruiter.position), accelerationSpeed * Time.deltaTime);
+        }
+
+        //Apply velocity
+        if (Vector3.Distance(transform.position, recruiter.position + offset) > 3)
+        {
+            rb.velocity = pointer.forward * velocityToApply;
         }
     }
 

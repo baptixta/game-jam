@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a2d580e80b035e749b4d560460ad5663
+guid: dc17cdce74ad0f74ab1ae1e4f86dfcec
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -20,6 +20,18 @@ TextureImporter:
   - first:
       213: -7840199020510334527
     second: Humano_5
+  - first:
+      213: -4701425194024552632
+    second: Humano_6
+  - first:
+      213: 5947124667199858530
+    second: Humano_7
+  - first:
+      213: -290391193314727142
+    second: Humano_8
+  - first:
+      213: -5561589799069700086
+    second: Humano_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -63,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,6 +110,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -106,9 +129,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436938876a434d448a02c8f898a6c62f
+      spriteID: cd897b91c208e1b479279a430259fcef
       internalID: 8462818320788909936
       vertices: []
       indices: 
@@ -126,10 +149,10 @@ TextureImporter:
       name: Humano_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,7 +160,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 104677456c0a12747b9a139b5121fed7
+      spriteID: 1aebb665500885544afbe3aa711fb8dc
       internalID: -2432109136797401513
       vertices: []
       indices: 
@@ -147,10 +170,10 @@ TextureImporter:
       name: Humano_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,7 +181,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d56a2204746320748970a93ef386abde
+      spriteID: 62b773e09b905a843badfe14d0b66a63
       internalID: -8304708765464396596
       vertices: []
       indices: 
@@ -168,10 +191,10 @@ TextureImporter:
       name: Humano_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 405c061c7dc33bf44970663fb6a6b8f6
+      spriteID: e81915b5968130349904879c74791042
       internalID: 1532050186435283888
       vertices: []
       indices: 
@@ -189,10 +212,10 @@ TextureImporter:
       name: Humano_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562ef4173249a564d9ce30e6ae1e70ac
+      spriteID: 277d2436ebfaaa145bf95bb250ebe71b
       internalID: -372096317338261446
       vertices: []
       indices: 
@@ -210,10 +233,10 @@ TextureImporter:
       name: Humano_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +244,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5be968e08b400ba418b8c6c8424d8041
+      spriteID: 529240e3ecccaf642b710cd027c8fea9
       internalID: -7840199020510334527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64794359ec5c19a418c5fd44333a1706
+      internalID: -4701425194024552632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5dea0954df68d41a80182613975ce0
+      internalID: 5947124667199858530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1a39eae71d4e74f8be2673f3c4e096
+      internalID: -290391193314727142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6b87d04882af84cb273df9b8705f51
+      internalID: -5561589799069700086
       vertices: []
       indices: 
       edges: []
@@ -230,7 +337,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 313122a9603e0f24b924e7c70fe4f173
+    spriteID: 476a7c335d6a2f540aba258f995cd49f
     internalID: 0
     vertices: []
     indices: 

@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     //     PRIVATE     //
     Rigidbody2D rb;
     SpriteRenderer[] renderersToFlip;
-    Animator[] animators;
+    Animator animator;
     bool jumpFlag;
     bool wallJumpFlag;
     float timeGrounded;
@@ -37,13 +37,21 @@ public class PlayerMovement : MonoBehaviour
     {
         //Getting references
         rb = GetComponent<Rigidbody2D>();
-        animators = GetComponentsInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>();
         renderersToFlip = GetComponentsInChildren<SpriteRenderer>();
         startPosition = transform.position;
     }
 
     void Update()
     {
+        //Wake up
+        if (Input.anyKeyDown)
+        {
+            animator.SetTrigger ("WakeUp");
+            CameraBehaviour.instance.desiredSize = 5.0f;
+            CameraBehaviour.instance.offset = new Vector3 (0, 1, -10);
+        }
+
         //Input vector
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
@@ -92,11 +100,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Animations
-        foreach (Animator a in animators)
-        {
-            a.SetBool("Walking", (inputVector.x != 0));
-            a.SetBool("Grounded", IsGrounded());
-        }
+        animator.SetBool("Walking", (inputVector.x != 0));
+        animator.SetBool("Grounded", IsGrounded());
         
         //Ground collision sound
         if (!wasGrounded)

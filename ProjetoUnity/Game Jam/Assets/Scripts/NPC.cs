@@ -15,12 +15,9 @@ public class NPC : MonoBehaviour
         StartCoroutine (Start());
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void DESTROCAR ()
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Instantiate (DESTROCADOVersion, transform.position, transform.rotation);
-            Destroy (gameObject);
-        }
+        GameObject obj = Instantiate (DESTROCADOVersion, transform.position, transform.rotation);
+        Destroy (gameObject);
     }
 }

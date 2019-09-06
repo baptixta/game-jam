@@ -29,4 +29,9 @@ public class CameraBehaviour : MonoBehaviour
         //Interpolating position
         transform.position = Vector3.SmoothDamp (transform.position, player.position + offset, ref currentVelocity, smoothTime);
     }
+
+    public void CallCameraAnimation (string animationName)
+    {
+        GetComponentInChildren<Animator>().SetTrigger (animationName);
+    }
 }

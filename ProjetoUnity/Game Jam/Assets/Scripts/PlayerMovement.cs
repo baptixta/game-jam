@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [Header ("Adjustments")]
     public float speed;
     public float jumpForce;
+    public float killJumpForce;
+    public float stompForce;
     public float respawnTime;
     public float horizontalForceDecreaseSpeed = 3.5f;
     [Header ("Ground Detection")]
@@ -31,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 startPosition;
     bool wasGrounded = false;
     bool respawning = false;
+    bool stomping = false;
+    bool stunned = false;
     float customHorizontalForce;
 
     void Start()
@@ -44,6 +48,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Stunned
+        if (stunned)
+        {
+            rb.velocity = Vector2.zero;
+            animator.SetBool ("Stomping", true);
+            return;
+        }
+
         //Wake up
         if (Input.anyKeyDown)
         {
@@ -62,14 +74,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Jump input flag
-        if (Input.GetButton("Jump"))
+        if (!stomping)
         {
-            jumpFlag = true;
-        }
-        if (Input.GetButtonUp("Jump"))
-        {
-            StopCoroutine(ResetJumpFlag());
-            StartCoroutine(ResetJumpFlag());
+            if (Input.GetButton("Jump"))
+            {
+                jumpFlag = true;
+            }
+            if (Input.GetButtonUp("Jump"))
+            {
+                StopCoroutine(ResetJumpFlag());
+                StartCoroutine(ResetJumpFlag());
+            }
         }
 
         //Wall jump flag
@@ -81,6 +96,12 @@ public class PlayerMovement : MonoBehaviour
                 StopCoroutine(ResetWallJumpFlag());
                 StartCoroutine(ResetWallJumpFlag());
             }
+        }
+
+        //Stomp flag
+        if (!IsGrounded() && Input.GetButtonDown ("Stomp") && !stomping)
+        {
+            StartCoroutine (Stomp(0.3f));
         }
 
         //Sprite flip
@@ -100,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Animations
+        animator.SetBool("Stomping", stomping);
         animator.SetBool("Walking", (inputVector.x != 0));
         animator.SetBool("Grounded", IsGrounded());
         
@@ -115,6 +137,12 @@ public class PlayerMovement : MonoBehaviour
 
         //Decreasing customHorizontalForce
         customHorizontalForce = Mathf.Lerp (customHorizontalForce, 0, horizontalForceDecreaseSpeed * Time.deltaTime);
+
+        //Stomping
+        if (stomping)
+        {
+            rb.velocity = new Vector2 (0.0f, rb.velocity.y);
+        }
     }
 
     void FixedUpdate()
@@ -156,10 +184,32 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0.0f;
         }
 
+        if (GetGroundObject() != null)
+        {
+            //DESTROÇANDO Humano
+            if (GetGroundObject().GetComponent<NPC>())
+            {
+                GetGroundObject().GetComponent<NPC>().DESTROCAR();
+                rb.velocity = new Vector2 (rb.velocity.x, -rb.velocity.y);
+                //rb.AddForce (Vector2.up * killJumpForce);
+            }
+        }
+
         //Applying customHorizontalForce if necessary
         if (customHorizontalForce != 0)
         {
             rb.velocity = new Vector2 (rb.velocity.x + customHorizontalForce, rb.velocity.y);
+        }
+
+        //Stopping stomp
+        if (stomping)
+        {
+            if (IsGrounded())
+            {
+                stomping = false;
+                StartCoroutine(Stun(0.5f));
+                CameraBehaviour.instance.CallCameraAnimation("Shake");
+            }
         }
     }
 
@@ -169,7 +219,17 @@ public class PlayerMovement : MonoBehaviour
     //is on top of any GameObject.
     bool IsGrounded()
     {
-        return Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f, groundLayerMask);
+        //return Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f, groundLayerMask);
+        return (GetGroundObject() != null);
+    }
+
+    GameObject GetGroundObject ()
+    {
+        RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f, groundLayerMask);
+        if (hit.collider != null)
+            return hit.collider.gameObject;
+        else
+            return null;
     }
 
     #endregion
@@ -216,6 +276,24 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.00f);
         wallJumpFlag = false;
+    }
+
+    IEnumerator Stomp (float delay)
+    {
+        stomping = true;
+        rb.velocity = new Vector2 (rb.velocity.x, 5);
+        rb.gravityScale = 0.5f;
+        yield return new WaitForSeconds (delay);
+        rb.gravityScale = 1.0f;
+        rb.velocity = new Vector2 (rb.velocity.x, 0.0f);
+        rb.AddForce (Vector2.down * stompForce);
+    }
+
+    IEnumerator Stun (float seconds)
+    {
+        stunned = true;
+        yield return new WaitForSeconds (seconds);
+        stunned = false;
     }
 
     IEnumerator Respawn ()

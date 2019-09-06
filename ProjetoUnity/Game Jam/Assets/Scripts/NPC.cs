@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPC : MonoBehaviour
 {
@@ -25,6 +26,10 @@ public class NPC : MonoBehaviour
         foreach (Rigidbody2D rb in obj.GetComponentsInChildren<Rigidbody2D>())
         {
             rb.AddTorque (Random.Range(-50, 50));
+        }
+        if (SceneManager.GetActiveScene().name == "1")
+        {
+            GameObject.Find ("Window").GetComponent<Window>().canBeBroken = true;
         }
         Destroy (gameObject);
     }

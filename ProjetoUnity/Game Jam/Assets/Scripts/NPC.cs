@@ -18,6 +18,10 @@ public class NPC : MonoBehaviour
     public void DESTROCAR ()
     {
         GameObject obj = Instantiate (DESTROCADOVersion, transform.position, transform.rotation);
+        foreach (Rigidbody2D rb in obj.GetComponentsInChildren<Rigidbody2D>())
+        {
+            rb.AddTorque (Random.Range(-50, 50));
+        }
         Destroy (gameObject);
     }
 }

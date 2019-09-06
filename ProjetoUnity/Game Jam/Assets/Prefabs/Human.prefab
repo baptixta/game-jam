@@ -118,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDelay: 0
   maxDelay: 5
+  DESTROCADOVersion: {fileID: 7232949452213614851, guid: a78c7e5569f8a5b42bd3a12ba2282960,
+    type: 3}
 --- !u!70 &8049456095725562523
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -129,7 +131,7 @@ CapsuleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06322461, y: 0}
   m_Size: {x: 0.62011945, y: 2}

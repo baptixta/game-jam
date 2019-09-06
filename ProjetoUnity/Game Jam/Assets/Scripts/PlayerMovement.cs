@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask wallLayerMask;
     public float wallJumpDrag;
     public float wallJumpForce;
+    public bool canWakeUp = false;
+    public static PlayerMovement instance;
 
     //     PRIVATE     //
     Rigidbody2D rb;
@@ -37,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
     bool stunned = false;
     float customHorizontalForce;
 
+    void Awake ()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         //Getting references
@@ -48,6 +55,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!canWakeUp)
+        {
+            return;
+        }
+
         //Stunned
         if (stunned)
         {
@@ -57,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Wake up
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && canWakeUp)
         {
             animator.SetTrigger ("WakeUp");
             CameraBehaviour.instance.desiredSize = 5.0f;

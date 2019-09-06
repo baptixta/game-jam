@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    public bool autoFlip = true;
     public float minDelay;
     public float maxDelay;
     public GameObject DESTROCADOVersion;
@@ -11,8 +12,11 @@ public class NPC : MonoBehaviour
     IEnumerator Start ()
     {
         yield return new WaitForSeconds (Random.Range(minDelay, maxDelay));
-        GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
-        StartCoroutine (Start());
+        if (autoFlip)
+        {
+            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+            StartCoroutine (Start());
+        }
     }
 
     public void DESTROCAR ()

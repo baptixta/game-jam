@@ -32,6 +32,12 @@ TextureImporter:
   - first:
       213: -5561589799069700086
     second: Humano_9
+  - first:
+      213: -5586577969739298429
+    second: Humano_10
+  - first:
+      213: -9059638222013748787
+    second: Humano_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -330,6 +336,48 @@ TextureImporter:
       bones: []
       spriteID: cc6b87d04882af84cb273df9b8705f51
       internalID: -5561589799069700086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_10
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a44a46d1f5c9944b9d50ffde2119221
+      internalID: -5586577969739298429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humano_11
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 64
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03f8b8064151064b8fa19adfa0d952e
+      internalID: -9059638222013748787
       vertices: []
       indices: 
       edges: []

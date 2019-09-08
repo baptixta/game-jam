@@ -1,0 +1,1301 @@
+fileFormatVersion: 2
+guid: 81889b7148bfbca43a02a16586c55516
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1236484601654279158
+    second: plantas_0
+  - first:
+      213: 1738876312029743863
+    second: plantas_1
+  - first:
+      213: -3754721049137269555
+    second: plantas_2
+  - first:
+      213: 3362339849564022686
+    second: plantas_3
+  - first:
+      213: -5083532484693228874
+    second: plantas_4
+  - first:
+      213: 8704206822634375250
+    second: plantas_5
+  - first:
+      213: -5892193943787052599
+    second: plantas_6
+  - first:
+      213: -3573212894451680514
+    second: plantas_7
+  - first:
+      213: 8146293355519132426
+    second: plantas_8
+  - first:
+      213: 1912211499234086292
+    second: plantas_9
+  - first:
+      213: 7591822614517197085
+    second: plantas_10
+  - first:
+      213: 8432080886963011831
+    second: plantas_11
+  - first:
+      213: 2412421195928095510
+    second: plantas_12
+  - first:
+      213: 9130370846476061537
+    second: plantas_13
+  - first:
+      213: -847635494423544358
+    second: plantas_14
+  - first:
+      213: -6209491119829062018
+    second: plantas_15
+  - first:
+      213: 3820076617445426769
+    second: plantas_16
+  - first:
+      213: -5114391936179087895
+    second: plantas_17
+  - first:
+      213: 8956213494669378277
+    second: plantas_18
+  - first:
+      213: -8716959700759029871
+    second: plantas_19
+  - first:
+      213: -7346461584456078245
+    second: plantas_20
+  - first:
+      213: 8554158270390560937
+    second: plantas_21
+  - first:
+      213: 7179580204212596382
+    second: plantas_22
+  - first:
+      213: 9174400109896232102
+    second: plantas_23
+  - first:
+      213: 7742195509992459580
+    second: plantas_24
+  - first:
+      213: -5855493685068213925
+    second: plantas_25
+  - first:
+      213: -371415362132485360
+    second: plantas_26
+  - first:
+      213: 1788756515977261393
+    second: plantas_27
+  - first:
+      213: -1451916705200163778
+    second: plantas_28
+  - first:
+      213: 6754124633233617092
+    second: plantas_29
+  - first:
+      213: -5481613257697520681
+    second: plantas_30
+  - first:
+      213: 6258228031127282742
+    second: plantas_31
+  - first:
+      213: -8153400415020808867
+    second: plantas_32
+  - first:
+      213: 6615402524625319433
+    second: plantas_33
+  - first:
+      213: 3940425604572497057
+    second: plantas_34
+  - first:
+      213: -1294780356571534960
+    second: plantas_35
+  - first:
+      213: -2169339278475350493
+    second: plantas_36
+  - first:
+      213: -2766821190991843415
+    second: plantas_37
+  - first:
+      213: 40208657119974690
+    second: plantas_38
+  - first:
+      213: -2741191830612996725
+    second: plantas_39
+  - first:
+      213: -1024259972176875928
+    second: plantas_40
+  - first:
+      213: -4291028958963369399
+    second: plantas_41
+  - first:
+      213: -432402517765225490
+    second: plantas_42
+  - first:
+      213: -7561626853464646711
+    second: plantas_43
+  - first:
+      213: 7873071042412670575
+    second: plantas_44
+  - first:
+      213: -8796092014576651702
+    second: plantas_45
+  - first:
+      213: 4545419584456506730
+    second: plantas_46
+  - first:
+      213: -6634008225688809969
+    second: plantas_47
+  - first:
+      213: -6154308174782853749
+    second: plantas_48
+  - first:
+      213: 716766470051228520
+    second: plantas_49
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plantas_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 140
+        width: 9
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38cd9340c3718540969e9fceb94becb
+      internalID: -1236484601654279158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 140
+        width: 14
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f46fcf2c910d3b41ad29e2c8ea1939c
+      internalID: 1738876312029743863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dfe9cb7768fc941a63a4709debf875
+      internalID: -3754721049137269555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5385c0bed6575834ba8005c22670f197
+      internalID: 3362339849564022686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c796d6f3430b44686751b0454516ad
+      internalID: -5083532484693228874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d9e7fffefcabd459f68168af9c0a94
+      internalID: 8704206822634375250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481e052c19178dc439fcf169230cad42
+      internalID: -5892193943787052599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79aad0e5fbbf0804f8759356dc01e985
+      internalID: -3573212894451680514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_8
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 141
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d587e60577d9cca47a4c462eaf3ee00d
+      internalID: 8146293355519132426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_9
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 138
+        width: 20
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eae775c29d79564587dcd996bc84b0d
+      internalID: 1912211499234086292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 122
+        width: 9
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d767d669114aa4c8902beb54e3be0b
+      internalID: 7591822614517197085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 122
+        width: 14
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495328e4990844c41a82cb0afdf520a3
+      internalID: 8432080886963011831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266ec59fe12734b4f92ea10b3f5c083d
+      internalID: 2412421195928095510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f3d2e909205b844ad1e31f59b58f82
+      internalID: 9130370846476061537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce77712b70467144b6c97b3ac165547
+      internalID: -847635494423544358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_15
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24db8a61742668c4d989708e24e915c7
+      internalID: -6209491119829062018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9ce920d6f40ed4a9e68d42c94cda35
+      internalID: 3820076617445426769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbcbb3c57e28644197b21217a149925
+      internalID: -5114391936179087895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_18
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 124
+        width: 7
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d6c18b85ce9a440a5b72f28e78579e
+      internalID: 8956213494669378277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_19
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 115
+        width: 20
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5886b5f3fca37db448a8a1fd8222c319
+      internalID: -8716959700759029871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 103
+        width: 9
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914530945d1d9234ca9d0bb9c67e1869
+      internalID: -7346461584456078245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 103
+        width: 14
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622e09f5c8ee7fd4f9ac1d21db3c421e
+      internalID: 8554158270390560937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_22
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 103
+        width: 21
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b530f5366c1ab24ca383a64fa22588f
+      internalID: 7179580204212596382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 103
+        width: 21
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c93d9d854fe834d8fa719cf269bf25
+      internalID: 9174400109896232102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_24
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 103
+        width: 21
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a9652d29f426b4ea84f1aeb8bbcaad
+      internalID: 7742195509992459580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 93
+        width: 20
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d21b18e1866a5549ad2980b7329777f
+      internalID: -5855493685068213925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 87
+        width: 9
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecad432c17845664aba7d91e4f14a375
+      internalID: -371415362132485360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 88
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbf50d5349ac1f4eb05fb13e2125f0b
+      internalID: 1788756515977261393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_28
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 83
+        width: 15
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e990eb583277b47b3ca0aab6a94c1d
+      internalID: -1451916705200163778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_29
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 83
+        width: 15
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7f06720e9d7b74b834df6b8ce606d5
+      internalID: 6754124633233617092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_30
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 82
+        width: 15
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccb06a229214354db465e76bdd58c2d
+      internalID: -5481613257697520681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 9
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31fa66388f42da489f7b58623bb07c7
+      internalID: 6258228031127282742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 73
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e3ed1454a4a154897ba619027a71fe
+      internalID: -8153400415020808867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_33
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 69
+        width: 8
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b4cc0488022cb4fbf06b55d04c85f7
+      internalID: 6615402524625319433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_34
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 70
+        width: 8
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff8e7bb9aa2146489443a14e12f1ad8
+      internalID: 3940425604572497057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 70
+        width: 8
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c309416730026d04a8bec593aa2afd37
+      internalID: -1294780356571534960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 56
+        width: 9
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b01ae64d29d6384f81bb4bb74c187ae
+      internalID: -2169339278475350493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 57
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431bf29bec894444baf6b22f292d7ff4
+      internalID: -2766821190991843415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_38
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 58
+        width: 15
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c4793e5003415409a947a1f8d88037
+      internalID: 40208657119974690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 57
+        width: 15
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b09a5f5814194eb577387d505c2b9
+      internalID: -2741191830612996725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_40
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 57
+        width: 15
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145eb530991a3af4ebea71a8adccf996
+      internalID: -1024259972176875928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_41
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 42
+        width: 8
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cac463696f076e43bd639bf2996af52
+      internalID: -4291028958963369399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_42
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 8
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effa85be110b7da45ac6e11d360a19f4
+      internalID: -432402517765225490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_43
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 42
+        width: 8
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f6e56b8362ad74db27188b02774fa2
+      internalID: -7561626853464646711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_44
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 42
+        width: 18
+        height: 11
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb74a0504e591b8478a991b20936d11a
+      internalID: 7873071042412670575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_45
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 42
+        width: 18
+        height: 11
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08ab41766e28f7478381558a9478fa4
+      internalID: -8796092014576651702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 42
+        width: 18
+        height: 11
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45d24031938ff34087a1951b0938aa2
+      internalID: 4545419584456506730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_47
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 5
+        width: 16
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f52fe8a90f713849912de73421af615
+      internalID: -6634008225688809969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_48
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 5
+        width: 16
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d50a0aecc6e194c8f301e14f3ba67a
+      internalID: -6154308174782853749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantas_49
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 5
+        width: 16
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f3e35f943651449b2140ba0ff7973d
+      internalID: 716766470051228520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1733cee6691421346bca6bdea4424e7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

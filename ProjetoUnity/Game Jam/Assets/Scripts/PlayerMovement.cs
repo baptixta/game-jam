@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject equippedHat;
     public bool hitKill;
+    public bool awake = false;
 
     void Awake ()
     {
@@ -75,11 +76,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Wake up
-        if (Input.anyKeyDown && canWakeUp)
+        if (Input.anyKey && canWakeUp)
         {
             animator.SetTrigger ("WakeUp");
             CameraBehaviour.instance.desiredSize = 5.0f;
             CameraBehaviour.instance.offset = new Vector3 (0, 1, -10);
+            awake = true;
         }
 
         //Input vector
@@ -109,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else //Fly
         {
-            if (Physics2D.Raycast(transform.position, Vector2.down, 5.0f, groundLayerMask))
+            if (Physics2D.Raycast(transform.position, Vector2.down, 2.0f, groundLayerMask))
             {
                 if (Input.GetButton ("Jump"))
                 {
@@ -256,7 +258,7 @@ public class PlayerMovement : MonoBehaviour
 
     GameObject GetGroundObject ()
     {
-        RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.1f, groundLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down, (GetComponent<Collider2D>().bounds.size.y / 2) + 0.3f, groundLayerMask);
         if (hit.collider != null)
             return hit.collider.gameObject;
         else
@@ -292,6 +294,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Respawn());
         }
+        //MEGAZORD
         if (collision.gameObject.name == "megazord")
         {
             collision.gameObject.GetComponent<PlayerMovement>().cabeca.SetActive (true);
@@ -299,7 +302,24 @@ public class PlayerMovement : MonoBehaviour
             CameraBehaviour.instance.desiredSize = 7.0f;
             instance = collision.gameObject.GetComponent<PlayerMovement>();
             collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
+            collision.gameObject.GetComponent<AudioSource>().Play();
             Destroy (gameObject);
+        }
+        //HUMAN HIT KILL
+        if (collision.gameObject.GetComponent<NPC>())
+        {
+            if (hitKill)
+            {
+                collision.gameObject.GetComponent<NPC>().DESTROCAR();
+            }
+            else
+            {
+                if (awake)
+                {
+                    Destroy (gameObject);
+                    UserInterface.instance.CallTransition("FadeOut");
+                }
+            }
         }
     }
 
@@ -310,6 +330,7 @@ public class PlayerMovement : MonoBehaviour
             Destroy (other.gameObject);
             equippedHat.SetActive (true);
             fly = true;
+            GetComponent<AudioSource>().Play();
         }
     }
 

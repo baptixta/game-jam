@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     public bool fly = false;
 
     public GameObject equippedHat;
+    public bool hitKill;
 
     void Awake ()
     {
@@ -295,6 +296,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerMovement>().cabeca.SetActive (true);
             CameraBehaviour.instance.player = collision.gameObject.transform;
+            CameraBehaviour.instance.desiredSize = 7.0f;
             instance = collision.gameObject.GetComponent<PlayerMovement>();
             collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
             Destroy (gameObject);

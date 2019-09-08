@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,7 +29,8 @@ public class NPC : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "1")
         {
-            GameObject.Find ("Window").GetComponent<Window>().canBeBroken = true;
+            if (Window.instance != null)
+            Window.instance.canBeBroken = true;
         }
         Destroy (gameObject);
     }

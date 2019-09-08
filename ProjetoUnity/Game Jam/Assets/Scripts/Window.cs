@@ -6,6 +6,12 @@ public class Window : MonoBehaviour
 {
     public bool canBeBroken = false;
     public GameObject brokenPrefab;
+    public static Window instance;
+
+    void Awake ()
+    {
+        instance = this;
+    }
 
     public void Break ()
     {

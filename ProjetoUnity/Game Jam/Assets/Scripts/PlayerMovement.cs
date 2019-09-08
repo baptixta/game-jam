@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float killJumpForce;
     public float stompForce;
     public float respawnTime;
+    public float flyForce;
     public float horizontalForceDecreaseSpeed = 3.5f;
     [Header ("Ground Detection")]
     public LayerMask groundLayerMask;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public float wallJumpDrag;
     public float wallJumpForce;
     public bool canWakeUp = false;
+    public GameObject cabeca;
     public static PlayerMovement instance;
 
     //     PRIVATE     //
@@ -38,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     bool stomping = false;
     bool stunned = false;
     float customHorizontalForce;
+    public bool fly = false;
+
+    public GameObject equippedHat;
 
     void Awake ()
     {
@@ -86,16 +91,29 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Jump input flag
-        if (!stomping)
+        if (!fly)
         {
-            if (Input.GetButton("Jump"))
+            if (!stomping)
             {
-                jumpFlag = true;
+                if (Input.GetButton("Jump"))
+                {
+                    jumpFlag = true;
+                }
+                if (Input.GetButtonUp("Jump"))
+                {
+                    StopCoroutine(ResetJumpFlag());
+                    StartCoroutine(ResetJumpFlag());
+                }
             }
-            if (Input.GetButtonUp("Jump"))
+        }
+        else //Fly
+        {
+            if (Physics2D.Raycast(transform.position, Vector2.down, 5.0f, groundLayerMask))
             {
-                StopCoroutine(ResetJumpFlag());
-                StartCoroutine(ResetJumpFlag());
+                if (Input.GetButton ("Jump"))
+                {
+                    rb.AddForce (Vector2.up * flyForce);
+                }
             }
         }
 
@@ -272,6 +290,24 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             StartCoroutine(Respawn());
+        }
+        if (collision.gameObject.name == "megazord")
+        {
+            collision.gameObject.GetComponent<PlayerMovement>().cabeca.SetActive (true);
+            CameraBehaviour.instance.player = collision.gameObject.transform;
+            instance = collision.gameObject.GetComponent<PlayerMovement>();
+            collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
+            Destroy (gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.name == "Hat")
+        {
+            Destroy (other.gameObject);
+            equippedHat.SetActive (true);
+            fly = true;
         }
     }
 
